@@ -1,0 +1,339 @@
+/************START OF TOP****************/
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(48, 48, 48);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+header nav a {
+    text-decoration: none;
+    float: right;
+    padding: 15px 20px;
+    margin: 0px 5px;
+    font-size: 24px;
+    color: white;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+header nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+#content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    margin-top: 0px;
+    padding-top: 50px;
+    background-color: rgb(48, 48, 48);
+    height: 100vh;
+    overflow: auto;
+}
+
+.typewriter-text {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.typewriter-text h1, .typewriter-text h2 {
+    border-right: 4px solid orange;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+}
+
+.typewriter-text h1:nth-child(1) {
+    width: 80rem;
+    animation: 
+        type 1s steps(40, end),
+        blink .5s step-end infinite alternate;
+    animation-fill-mode: forwards;
+    font-size: 10em;
+    margin: 0px;
+}
+
+@keyframes type {
+    0% {width: 0;}
+    99.9% {border-right: 4px solid orange;}
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+.typewriter-text h1:nth-child(2) {
+    width: 60rem;
+    opacity: 0;
+    animation: 
+        type2 1s steps(40, end),
+        blink .5s step-end infinite alternate;
+        animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    font-size: 10em;
+    margin: 0px;
+}
+
+@keyframes type2 {
+    0% {width: 0;}
+    1% {opacity: 1;}
+    99.9% {border-right: 4px solid orange}
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+.typewriter-text h1:nth-child(3) {
+    width: 39rem;
+    opacity: 0;
+    animation: 
+        type3 1s steps(40, end),
+        blink .5s step-end infinite alternate;
+        animation-delay: 3s;
+    animation-fill-mode: forwards;
+    font-size: 3.5em;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-left: 5px;
+    
+}
+
+@keyframes type3 {
+    0% {width: 0;}
+    1% {opacity: 1;}
+    99.9% {border-right: 4px solid orange}
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+.typewriter-text h2:nth-child(4) {
+    width: 450px;
+    opacity: 0;
+    animation: 
+        type4 1s steps(40, end),
+        blink .5s step-end infinite alternate;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+    font-size: 24px;
+    margin: 30px 10px;
+}
+
+@keyframes type4 {
+    0% {width: 0;}
+    1% {opacity: 1;}
+    99.9% {border-right: 4px solid orange}
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+.typewriter-text h2:nth-child(5) {
+    width: 50px;
+    opacity: 0;
+    animation: 
+        type5 0.3s steps(40, end),
+        blink .5s step-end infinite alternate;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    font-size: 24px;
+    margin: 30px 10px;
+    border-right: 4px solid white;
+}
+
+@keyframes type5 {
+    0% {width: 0;}
+    1% {opacity: 1;}
+    99.9% {border-right: 4px solid white}
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typewriter-text h2 a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding-right: 60px;
+}
+
+.typewriter-text h2 a:hover {
+    color: rgb(165, 165, 165);
+}
+
+.typewriter-text h2 img:hover {
+    opacity: 0.5;
+}
+
+.email {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+/******************END OF TOP************************/
+
+/******************START OF MIDDLE*******************/
+#middle {
+    height: 100%;
+    background-color: rgb(61, 61, 61);
+    overflow: auto;
+}
+
+#middle h3 {
+    text-align: center;
+    margin: auto auto;
+    width: 100%;
+    font-size: 26px;
+    padding-bottom: 40px;
+}
+
+#middle a {
+    color: white;
+    text-decoration: none;
+}
+
+#middle a:hover {
+    color:rgb(209, 209, 209);
+}
+
+.title {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: auto auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.title h1 {
+    margin-bottom: 0px;
+}
+
+.title h2 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#project-tab-main {
+    text-decoration: underline;
+}
+
+#project-tab-main:hover {
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+}
+
+#project-tab-javascript:hover {
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+}
+
+article {
+    width: 90%;
+    overflow: auto;
+    margin: auto auto;
+    text-align: center;
+}
+
+.clear {
+    clear: left;
+}
+
+#project-main {
+    position: absolute;
+    width: 100%;
+    z-index: 1;    
+}
+
+#project-javascript {
+    z-index: 1;
+}
+
+section {
+
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section img {
+    width: 400px;
+    height: 200px;
+}
+
+figure {
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+}
+
+figcaption {
+    color: white;
+    padding: 1em;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+}
+/******************END OF MIDDLE*******************/
+
+/******************START OF FOOTER*******************/
+footer {
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    text-align: right;
+    overflow: auto;
+}
+
+footer p {
+    margin-right: 20px;
+}
