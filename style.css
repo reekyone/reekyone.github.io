@@ -321,6 +321,16 @@ figcaption {
     padding: 1em;
     font-size: 1.1em;
     letter-spacing: 0.5px;
+    position: relative;
+}
+
+.only-github p {
+    margin: 0px;
+    font-size: 0.8em;
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.25em;
+
 }
 /******************END OF MIDDLE*******************/
 
